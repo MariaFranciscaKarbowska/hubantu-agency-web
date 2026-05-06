@@ -34,10 +34,10 @@ I implemented a custom script that processes the "About Us" section by:
 ## Preview
 
 ### Desktop View
-![Landing Page Design](hubantu_mainpage.jpg)
+![Landing Page Design](./hubantu_mainpage.png)
 
 ### Interaction Demo
-![Application Demo Video](HuBantu_preview.mp4)
+![Application Demo Video](./HuBantu_preview.mp4)
 
 ---
 *Developed as an exploration of artistic web design and JavaScript DOM manipulation.*
