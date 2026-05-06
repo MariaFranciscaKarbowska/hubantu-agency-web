@@ -37,7 +37,9 @@ I implemented a custom script that processes the "About Us" section by:
 ![Landing Page Design](./hubantu_mainpage.png)
 
 ### Interaction Demo
-![Application Demo Video](./HuBantu_preview.mp4)
+![Application Demo Video] <video src="HuBantu_preview.mp4" controls="controls" style="max-width: 100%;">
+  Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+</video>
 
 ---
 *Developed as an exploration of artistic web design and JavaScript DOM manipulation.*
