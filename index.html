@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <img id="hubantu" src="hubantu.png" alt="logo">
+    <nav class = "moje-menu">
+
+
+<a id="About" href="#About">About us</a>
+<div class="dropdown">
+  <a href="arts.html">Arts & Crafts</a>
+  <div class="dropdown-content">
+    <a id="Paintings" href="paintings.html">Painting</a>
+    <a id="Drawings" href="drawings.html">Drawings</a>
+    <a id="Architecture" href="architecture.html">Architecture</a>
+  </div>
+</div>
+<div class="dropdown">
+  <a id="Beats" href="beats.html">Beats</a>
+  <div class="dropdown-content">
+    <a id="Tutorials" href="tutorials.html">Tutorials</a>
+    <a id="Purchase" href="purchase.html">Purchase</a>
+  </div>
+</div>
+
+<a id="Platforms" href="platforms.html">Platforms</a>
+<a  id="Shop" href="shop.html">Shop</a>
+
+</nav>
+<br>
+<br>
+
+<h1>H<span class="biala-litera">U</span> BANTU</h1>
+
+<nav class="pics">
+   
+<img id="first"  src="first.png" alt="first" style= "max-width: 300px; height: auto;">
+<img src="second.png" alt="second" style="max-width: 300px;height: auto;">
+<img id="first"  src="first.png" alt="first" style= "max-width:300px; height: auto;">
+</nav>
+
+
+<nav class="about" id="About">
+
+
+<p id="About-us">Hu Bantu is a multidisciplinary creative agency specializing in music production, architecture, engineering, and fine arts. Founded in 2019 as a visionary brainchild by a group of college peers, our mission was built on an innovative idea: to unite local creatives into one expansive marketplace. We provide a thriving ecosystem where artists can collaborate, grow, and build sustainable careers through their craft.
+    <br><br>
+    Due to the easy collaboration algorithm, artists can "blow up" with minimal effort if exposed to the market that Hu Bantu creates. <br> <br> The soft tensions, fleeting emotions, and silent systems that shape our lives. My work weaves together storytelling, politics, and existential thoughts, revealing experiences lingering beneath the surface of ordinary moments. Through a mix of realism and metaphor, I explore various themes.
+Our art invites reflection, not just on what is seen, <br> but on what is felt and often left unsaid.
+
+        
+        The soft tensions, fleeting emotions, and silent systems that shape our lives. Our work weaves together storytelling, politics, and existential thoughts, revealing experiences lingering beneath the surface of ordinary moments. Through a mix of realism and metaphor, I explore various themes.
+
+Bantu art invites reflection, not just on what is seen, but on what is felt and often left unsaid. <br> <br> <br> <br>
+
+</p>
+</nav>
+<nav class="pics2">
+   
+
+<img src="small.png" alt="second" style="max-width: 400px;height: auto;">
+
+</nav>
+
+<footer>© 2026 Hu Bantu. All rights reserved. No part of this website or its content may be reproduced, copied, or distributed in any form without express written permission from the owner. </footer>
+</body>
+
+<script>
+  const akapit = document.getElementById("About-us");
+  const slowa = akapit.innerHTML.split(' ');
+  akapit.innerHTML = '';
+  
+  slowa.forEach(slowo => {
+    // 1. Losujemy liczbę od 0 do 360 (to jest odcień koloru na kole barw)
+    const odcien = Math.floor(Math.random() * 360);
+    
+    // 2. Tworzymy piękny, nasycony kolor
+    const wymyslonyKolor = `hsl(${odcien}, 100%, 60%)`;
+    
+    // 3. Wrzucamy ten kolor prosto do atrybutu "style" naszego spana jako zmienną --losowy-kolor
+    akapit.innerHTML += `<span style="--losowy-kolor: ${wymyslonyKolor};">${slowo} </span>`;
+  });
+</script>
+</html>
